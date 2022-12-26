@@ -3,11 +3,11 @@
 let resultName = document.querySelector('#name-input');
 resultName.addEventListener('input', onInputChange);
 
-let outputEl = document.querySelector('#name-output');
+let output = document.querySelector('#name-output');
 
 function onInputChange(event) {
   resultName = event.currentTarget.value;
   console.log(resultName);
 
-  resultName !== ' ' ? (outputEl.innerText = resultName.trim()) : 'Anonymous';
+  resultName !== ' ' ? (output.innerText = resultName.trim()) : 'Anonymous';
 }
